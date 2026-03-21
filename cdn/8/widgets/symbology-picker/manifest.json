@@ -1,0 +1,22 @@
+{
+  "name": "symbology-picker",
+  "label": "Symbology Picker",
+  "type": "widget",
+  "version": "1.13.0",
+  "exbVersion": "1.13.0",
+  "author": "Custom",
+  "description": "Click a point or polyline feature on the map to update its symbology.",
+  "copyright": "",
+  "license": "",
+  "dependency": [
+    "jimu-arcgis"
+  ],
+  "properties": {},
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 300,
+    "height": 60
+  }
+}

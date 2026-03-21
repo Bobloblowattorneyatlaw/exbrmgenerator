@@ -11822,21 +11822,30 @@
     "group": 2
   },
   {
-    "name": "change-symbol-widget",
+    "name": "line-symbology-widget",
     "manifest": {
-      "name": "change-symbol-widget",
-      "label": "Change Symbol Widget",
+      "name": "line-symbology-widget",
+      "label": "Line Symbology",
       "type": "widget",
-      "version": "1.0.0",
-      "exbVersion": "1.14.0",
-      "description": "Widget that changes symbology of a selected feature using org Web 2D Styles.",
+      "version": "1.19.0",
+      "exbVersion": "1.19.0",
+      "author": "GAC",
+      "description": "Click a polyline and apply GAC colors.",
+      "supportMultiInstance": true,
+      "useMapWidgetIds": true,
       "properties": {
-        "useMapWidgetIds": true,
+        "mapWidgetIds": [],
+        "hasMainClass": false,
         "hasSettingPage": false
-      }
+      },
+      "translatedLocales": [
+        "en"
+      ]
     },
-    "uri": "widgets/change-symbol-widget/",
-    "icon": "widgets/change-symbol-widget/icon.png",
+    "i18nLabel": {},
+    "i18nDescription": {},
+    "uri": "widgets/line-symbology-widget/",
+    "icon": "widgets/line-symbology-widget/icon.png",
     "order": 700,
     "group": 7
   },
@@ -11871,49 +11880,61 @@
     "group": 7
   },
   {
-    "name": "symbol-styler-pro",
+    "name": "symbology-picker",
     "manifest": {
-      "name": "symbol-styler-pro",
-      "label": "Symbol Styler Pro",
+      "name": "symbology-picker",
+      "label": "Symbology Picker",
       "type": "widget",
-      "version": "1.0.0",
-      "exbVersion": "1.14.0",
-      "author": "Your Name",
-      "description": "A powerful symbol styling widget with Web Style integration, multi-feature editing, undo/redo, and attribute-based selection.",
+      "version": "1.13.0",
+      "exbVersion": "1.13.0",
+      "author": "Custom",
+      "description": "Click a point or polyline feature on the map to update its symbology.",
+      "copyright": "",
+      "license": "",
       "dependency": [
-        "jimu-arcgis",
-        "jimu-core",
-        "jimu-ui",
-        "jimu-ui/advanced/setting-components"
+        "jimu-arcgis"
       ],
-      "properties": {
-        "hasSettingPage": false,
-        "hasConfig": false,
-        "hasMainClass": false
-      },
-      "supportMultiInstance": false,
+      "properties": {},
       "translatedLocales": [
         "en"
       ],
       "defaultSize": {
-        "width": 350,
-        "height": 600
+        "width": 300,
+        "height": 60
+      }
+    },
+    "i18nLabel": {},
+    "i18nDescription": {},
+    "uri": "widgets/symbology-picker/",
+    "icon": "widgets/symbology-picker/icon.svg",
+    "order": 700,
+    "group": 7
+  },
+  {
+    "name": "SymbologyGridWidget",
+    "manifest": {
+      "name": "SymbologyGridWidget",
+      "label": "Symbology Grid",
+      "type": "widget",
+      "version": "1.19.0",
+      "exbVersion": "1.19.0",
+      "author": "Alex",
+      "description": "A widget that displays a grid of symbology icons.",
+      "properties": {
+        "hasConfig": false,
+        "hasMainClass": false,
+        "hasSettingPage": false
       },
-      "widgets": [],
-      "extensions": [],
-      "actions": [],
-      "dataSources": [],
-      "settingEntry": "src/setting.tsx",
-      "entry": "src/widget.tsx"
+      "supportMultiInstance": true,
+      "dependency": [],
+      "translatedLocales": [
+        "en"
+      ]
     },
-    "i18nLabel": {
-      "en": "Symbol Styler Pro"
-    },
-    "i18nDescription": {
-      "en": null
-    },
-    "uri": "widgets/symbol-styler-pro/",
-    "icon": "widgets/symbol-styler-pro/icon.png",
+    "i18nLabel": {},
+    "i18nDescription": {},
+    "uri": "widgets/SymbologyGridWidget/",
+    "icon": "widgets/SymbologyGridWidget/icon.png",
     "order": 700,
     "group": 7
   }

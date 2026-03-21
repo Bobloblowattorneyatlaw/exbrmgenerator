@@ -272,9 +272,33 @@
       }
     },
     "layout_97": {
-      "content": {},
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_87",
+          "bbox": {
+            "left": "0.0%",
+            "right": "81.7%",
+            "top": "89.0%",
+            "bottom": "5.1%",
+            "width": "18.3%",
+            "height": "5.9%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            }
+          }
+        }
+      },
       "type": "FIXED",
-      "label": "Map FixedLayout"
+      "label": "Map FixedLayout",
+      "order": [
+        "0"
+      ]
     },
     "layout_98": {
       "content": {
@@ -489,7 +513,12 @@
         },
         "initialMapDataSourceID": "dataSource_1",
         "scaleRange": null,
-        "customLODs": null
+        "customLODs": null,
+        "showPopupUponSelection": false,
+        "popupDockPosition": "top-right",
+        "clientQueryDataSourceIds": [
+          "dataSource_1"
+        ]
       },
       "id": "widget_72",
       "layouts": {
@@ -2295,6 +2324,16 @@
           ]
         }
       ]
+    },
+    "widget_87": {
+      "uri": "widgets/symbology-picker/",
+      "version": "1.13.0",
+      "label": "Symbology Picker",
+      "config": {},
+      "id": "widget_87",
+      "useMapWidgetIds": [
+        "widget_72"
+      ]
     }
   },
   "exbVersion": "1.19.0",
@@ -2390,6 +2429,28 @@
           "version": "1.19.0"
         }
       ]
+    },
+    "messageConfig_5": {
+      "id": "messageConfig_5",
+      "widgetId": "widget_72",
+      "messageType": "DATA_RECORDS_SELECTION_CHANGE",
+      "actions": [
+        {
+          "actionId": "widget_73-openWidget-1774110370664",
+          "widgetId": "widget_73",
+          "sectionId": null,
+          "messageWidgetId": "widget_72",
+          "actionName": "openWidget",
+          "description": null,
+          "config": {
+            "widgetIds": [
+              "widget_82"
+            ],
+            "useDataSources": []
+          },
+          "version": "1.19.0"
+        }
+      ]
     }
   },
   "pageStructure": [
@@ -2471,7 +2532,7 @@
       }
     }
   },
-  "publishTimestamp": 1774106162499,
+  "publishTimestamp": 1774130626858,
   "attributes": {
     "portalUrl": "https://gac2.maps.arcgis.com",
     "isWebTier": false,
@@ -2482,7 +2543,7 @@
     "type": "Web Experience",
     "thumbnail": null
   },
-  "timestamp": 1774106160395,
+  "timestamp": 1774130417735,
   "sharedThemeVariables": null,
   "mainLocale": "en",
   "dataSources": {
