@@ -1,11 +1,11 @@
 {
-  "name": "master",
-  "label": "Prime",
+  "name": "ocean",
+  "label": "Ocean",
   "type": "theme",
   "version": "1.19.0",
   "exbVersion": "1.19.0",
   "author": "Esri R&D Center Beijing",
-  "description": "A classic default theme with simple and standard colors suitable for various scenarios.",
+  "description": "An elemental theme with flat and geometric designs inspired by oceans.",
   "copyright": "",
   "license": "http://www.apache.org/licenses/LICENSE-2.0",
   "translatedLocales": [

@@ -49,7 +49,7 @@
           "bbox": {
             "left": "3.9%",
             "right": "83.9%",
-            "top": "5.0%",
+            "top": "0%",
             "bottom": "89.7%",
             "width": "12.2%",
             "height": "5.4%"
@@ -62,7 +62,8 @@
               "right": true,
               "top": false,
               "bottom": true
-            }
+            },
+            "vCenter": false
           }
         }
       }
@@ -272,33 +273,10 @@
       }
     },
     "layout_97": {
-      "content": {
-        "0": {
-          "type": "WIDGET",
-          "widgetId": "widget_87",
-          "bbox": {
-            "left": "0.0%",
-            "right": "81.7%",
-            "top": "89.0%",
-            "bottom": "5.1%",
-            "width": "18.3%",
-            "height": "5.9%"
-          },
-          "setting": {
-            "autoProps": {
-              "left": false,
-              "right": true,
-              "top": true,
-              "bottom": false
-            }
-          }
-        }
-      },
+      "content": {},
       "type": "FIXED",
       "label": "Map FixedLayout",
-      "order": [
-        "0"
-      ]
+      "order": []
     },
     "layout_98": {
       "content": {
@@ -325,6 +303,12 @@
           "widgetId": "widget_81",
           "bbox": {},
           "setting": {}
+        },
+        "4": {
+          "type": "WIDGET",
+          "widgetId": "widget_95",
+          "bbox": {},
+          "setting": {}
         }
       },
       "type": "FIXED",
@@ -332,6 +316,7 @@
       "order": [
         "2",
         "0",
+        "4",
         "3",
         "1"
       ]
@@ -617,6 +602,14 @@
             "widget_81": {
               "width": 654.25,
               "height": 649.5500030517578
+            },
+            "widget_95": {
+              "width": 349.25,
+              "height": 121
+            },
+            "widget_75": {
+              "width": 342.25,
+              "height": 502
             }
           }
         },
@@ -658,7 +651,6 @@
             "isEnabled": true,
             "hiddenJimuLayerViewIds": [],
             "showJimuLayerViewIds": [
-              "widget_72-dataSource_1-1909e61060c-layer-8",
               "widget_72-dataSource_1-18db181b054-layer-1-18db181b218-layer-4",
               "widget_72-dataSource_1-18db181b054-layer-1-18db181b212-layer-3",
               "widget_72-dataSource_1-18db181b054-layer-1-18db181b20c-layer-2"
@@ -2325,12 +2317,12 @@
         }
       ]
     },
-    "widget_87": {
+    "widget_95": {
       "uri": "widgets/symbology-picker/",
       "version": "1.13.0",
       "label": "Symbology Picker",
       "config": {},
-      "id": "widget_87",
+      "id": "widget_95",
       "useMapWidgetIds": [
         "widget_72"
       ]
@@ -2338,7 +2330,7 @@
   },
   "exbVersion": "1.19.0",
   "mainSizeMode": "LARGE",
-  "theme": "themes/master/",
+  "theme": "themes/ocean/",
   "forBuilderAttributes": {
     "lockLayout": false,
     "viewPortSize": {
@@ -2481,58 +2473,8 @@
     },
     "backgroundColor": "var(--dark-700)"
   },
-  "customThemeOptions": {
-    "src": {
-      "primary": {
-        "color": "#6108a1",
-        "harmonize": true
-      }
-    },
-    "sys": {
-      "color": {
-        "mode": "light",
-        "light": {
-          "primary": {
-            "main": "#6108a1"
-          },
-          "action": {},
-          "surface": {
-            "background": "var(--ref-palette-neutral-300)",
-            "backgroundText": "var(--ref-palette-neutral-1200)",
-            "backgroundHint": "var(--ref-palette-neutral-1100)"
-          }
-        }
-      },
-      "typography": {
-        "h1": {
-          "fontFamily": "Avenir Next"
-        },
-        "h2": {
-          "fontFamily": "Avenir Next"
-        },
-        "h3": {
-          "fontFamily": "Avenir Next"
-        },
-        "h4": {
-          "fontFamily": "Avenir Next"
-        },
-        "h5": {
-          "fontFamily": "Avenir Next"
-        },
-        "h6": {
-          "fontFamily": "Avenir Next"
-        }
-      }
-    },
-    "comp": {
-      "Button": {
-        "root": {
-          "vars": {}
-        }
-      }
-    }
-  },
-  "publishTimestamp": 1774130626858,
+  "customThemeOptions": {},
+  "publishTimestamp": 1774135449703,
   "attributes": {
     "portalUrl": "https://gac2.maps.arcgis.com",
     "isWebTier": false,
@@ -2543,7 +2485,7 @@
     "type": "Web Experience",
     "thumbnail": null
   },
-  "timestamp": 1774130417735,
+  "timestamp": 1774135448105,
   "sharedThemeVariables": null,
   "mainLocale": "en",
   "dataSources": {

@@ -11822,34 +11822,6 @@
     "group": 2
   },
   {
-    "name": "line-symbology-widget",
-    "manifest": {
-      "name": "line-symbology-widget",
-      "label": "Line Symbology",
-      "type": "widget",
-      "version": "1.19.0",
-      "exbVersion": "1.19.0",
-      "author": "GAC",
-      "description": "Click a polyline and apply GAC colors.",
-      "supportMultiInstance": true,
-      "useMapWidgetIds": true,
-      "properties": {
-        "mapWidgetIds": [],
-        "hasMainClass": false,
-        "hasSettingPage": false
-      },
-      "translatedLocales": [
-        "en"
-      ]
-    },
-    "i18nLabel": {},
-    "i18nDescription": {},
-    "uri": "widgets/line-symbology-widget/",
-    "icon": "widgets/line-symbology-widget/icon.png",
-    "order": 700,
-    "group": 7
-  },
-  {
     "name": "simple",
     "manifest": {
       "name": "simple",
@@ -11907,34 +11879,6 @@
     "i18nDescription": {},
     "uri": "widgets/symbology-picker/",
     "icon": "widgets/symbology-picker/icon.svg",
-    "order": 700,
-    "group": 7
-  },
-  {
-    "name": "SymbologyGridWidget",
-    "manifest": {
-      "name": "SymbologyGridWidget",
-      "label": "Symbology Grid",
-      "type": "widget",
-      "version": "1.19.0",
-      "exbVersion": "1.19.0",
-      "author": "Alex",
-      "description": "A widget that displays a grid of symbology icons.",
-      "properties": {
-        "hasConfig": false,
-        "hasMainClass": false,
-        "hasSettingPage": false
-      },
-      "supportMultiInstance": true,
-      "dependency": [],
-      "translatedLocales": [
-        "en"
-      ]
-    },
-    "i18nLabel": {},
-    "i18nDescription": {},
-    "uri": "widgets/SymbologyGridWidget/",
-    "icon": "widgets/SymbologyGridWidget/icon.png",
     "order": 700,
     "group": 7
   }
