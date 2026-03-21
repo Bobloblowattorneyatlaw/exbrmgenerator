@@ -21,27 +21,27 @@
     "home-layout-large": {
       "type": "FIXED",
       "order": [
-        "1",
-        "0"
+        "0",
+        "1"
       ],
       "content": {
         "0": {
           "type": "WIDGET",
           "widgetId": "widget_72",
           "bbox": {
-            "left": "20.8%",
-            "right": "22.8%",
-            "top": "5.0%",
-            "bottom": "6.2%",
-            "width": "56.4%",
-            "height": "88.8%"
+            "left": "0.0%",
+            "right": "0.0%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "100.0%",
+            "height": "100.0%"
           },
           "setting": {
             "autoProps": {
-              "left": false,
-              "right": true,
-              "top": false,
-              "bottom": true
+              "left": true,
+              "right": false,
+              "top": true,
+              "bottom": false
             }
           }
         },
@@ -593,13 +593,7 @@
         },
         "3": {
           "type": "WIDGET",
-          "widgetId": "widget_79",
-          "bbox": {},
-          "setting": {}
-        },
-        "4": {
-          "type": "WIDGET",
-          "widgetId": "widget_80",
+          "widgetId": "widget_81",
           "bbox": {},
           "setting": {}
         }
@@ -608,10 +602,9 @@
       "label": "Controller layout",
       "order": [
         "2",
-        "4",
-        "3",
         "0",
-        "1"
+        "1",
+        "3"
       ]
     }
   },
@@ -1078,24 +1071,29 @@
             "scale": 147914381.897889,
             "targetGeometry": {
               "spatialReference": {
+                "latestWkid": 3857,
                 "wkid": 102100
               },
-              "x": 0,
-              "y": 2000000
+              "x": 29618431.129194416,
+              "y": 2920006.803941115
             }
           },
           "extent": {
             "spatialReference": {
+              "latestWkid": 3857,
               "wkid": 102100
             },
-            "xmin": -18041584.66020204,
-            "ymin": -15532819.799936041,
-            "xmax": 18041584.66020204,
-            "ymax": 19532819.79993604
+            "xmin": 4571545.700714357,
+            "ymin": -12538617.79644892,
+            "xmax": 54665316.557674475,
+            "ymax": 18378631.40433115
           },
           "rotation": 0,
           "viewType": "2d"
-        }
+        },
+        "initialMapDataSourceID": "dataSource_1",
+        "scaleRange": null,
+        "customLODs": null
       },
       "id": "widget_72",
       "layouts": {
@@ -1169,7 +1167,13 @@
             }
           }
         }
-      }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ]
     },
     "widget_73": {
       "uri": "widgets/common/controller/",
@@ -2512,22 +2516,119 @@
       },
       "id": "widget_76"
     },
-    "widget_79": {
-      "uri": "widgets/symbol-styler-pro/",
-      "version": "1.0.0",
-      "label": "Symbol Styler Pro",
-      "config": null,
-      "id": "widget_79"
-    },
-    "widget_80": {
-      "uri": "widgets/change-symbol-widget/",
-      "version": "1.0.0",
-      "label": "Change Symbol Widget",
+    "widget_81": {
+      "uri": "widgets/common/table/",
+      "version": "1.19.0",
+      "label": "Table",
       "config": {
-        "mapWidgetIds": [],
-        "attributeField": "TYPE"
+        "layersConfig": [],
+        "mapViewsConfig": {
+          "widget_72-dataSource_1": {
+            "customizeLayers": true,
+            "customJimuLayerViewIds": [],
+            "layersConfig": []
+          }
+        },
+        "tableMode": "MAP",
+        "respectMapRange": false,
+        "arrangeType": "TABS",
+        "pagingStyle": "SCROLL",
+        "pageSize": 50,
+        "enableRelatedRecords": false,
+        "enableAttachments": false,
+        "columnSetting": {
+          "responsiveType": "FIXED",
+          "columnWidth": 200,
+          "wrapText": false,
+          "textAlign": "start"
+        },
+        "headerFontSetting": {
+          "backgroundColor": "",
+          "fontSize": 14,
+          "bold": false,
+          "color": ""
+        },
+        "enableSelect": true,
+        "selectMode": "SINGLE",
+        "enableRefresh": true,
+        "enableDelete": false,
+        "enableShowHideColumn": true,
+        "showCount": true,
+        "enableMapExtentFilter": false,
+        "defaultExtentFilterEnabled": false
       },
-      "id": "widget_80"
+      "id": "widget_81",
+      "useMapWidgetIds": [
+        "widget_72"
+      ],
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      },
+      "useDataSources": []
     }
   },
   "exbVersion": "1.19.0",
@@ -2708,10 +2809,18 @@
   "attributes": {
     "portalUrl": "https://gac2.maps.arcgis.com"
   },
-  "timestamp": 1774097405123,
+  "timestamp": 1774101031791,
   "sharedThemeVariables": null,
   "mainLocale": "en",
-  "dataSources": {},
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_MAP",
+      "sourceLabel": "Dark Map ExB RM Generator",
+      "itemId": "5bab79a137fc4d69b7d8e99a9b9d4561",
+      "portalUrl": "https://gac2.maps.arcgis.com"
+    }
+  },
   "utilities": {
     "utility_1": {
       "id": "utility_1",
