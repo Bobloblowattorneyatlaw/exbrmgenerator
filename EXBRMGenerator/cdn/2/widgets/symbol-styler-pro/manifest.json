@@ -1,0 +1,34 @@
+{
+  "name": "symbol-styler-pro",
+  "label": "Symbol Styler Pro",
+  "type": "widget",
+  "version": "1.0.0",
+  "exbVersion": "1.14.0",
+  "author": "Your Name",
+  "description": "A powerful symbol styling widget with Web Style integration, multi-feature editing, undo/redo, and attribute-based selection.",
+  "dependency": [
+    "jimu-arcgis",
+    "jimu-core",
+    "jimu-ui",
+    "jimu-ui/advanced/setting-components"
+  ],
+  "properties": {
+    "hasSettingPage": false,
+    "hasConfig": false,
+    "hasMainClass": false
+  },
+  "supportMultiInstance": false,
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 350,
+    "height": 600
+  },
+  "widgets": [],
+  "extensions": [],
+  "actions": [],
+  "dataSources": [],
+  "settingEntry": "src/setting.tsx",
+  "entry": "src/widget.tsx"
+}

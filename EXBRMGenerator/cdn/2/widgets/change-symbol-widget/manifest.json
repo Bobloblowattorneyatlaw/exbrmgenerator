@@ -1,0 +1,12 @@
+{
+  "name": "change-symbol-widget",
+  "label": "Change Symbol Widget",
+  "type": "widget",
+  "version": "1.0.0",
+  "exbVersion": "1.14.0",
+  "description": "Widget that changes symbology of a selected feature using org Web 2D Styles.",
+  "properties": {
+    "useMapWidgetIds": true,
+    "hasSettingPage": false
+  }
+}
