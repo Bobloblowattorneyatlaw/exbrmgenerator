@@ -2998,17 +2998,7 @@
                       "F2__Visible__",
                       "F1__CITY",
                       "F3__COUNTRY",
-                      "F4__WORLD_REGION",
-                      "x",
-                      "y",
-                      "ObjectId",
-                      "Assigned_User",
-                      "ObjectId2",
-                      "GlobalID",
-                      "CreationDate",
-                      "Creator",
-                      "EditDate",
-                      "Editor"
+                      "F4__WORLD_REGION"
                     ],
                     "includeApproxDistance": false,
                     "displayFeatureCount": true
@@ -3151,17 +3141,7 @@
             "F2__Visible__",
             "F1__CITY",
             "F3__COUNTRY",
-            "F4__WORLD_REGION",
-            "x",
-            "y",
-            "ObjectId",
-            "Assigned_User",
-            "ObjectId2",
-            "GlobalID",
-            "CreationDate",
-            "Creator",
-            "EditDate",
-            "Editor"
+            "F4__WORLD_REGION"
           ]
         }
       ],
@@ -3524,22 +3504,28 @@
           "description": null,
           "config": {
             "useDataSource": {
-              "dataSourceId": "dataSource_2-0",
-              "mainDataSourceId": "dataSource_2-0",
-              "rootDataSourceId": "dataSource_2"
+              "dataSourceId": "dataSource_3-0",
+              "mainDataSourceId": "dataSource_3-0",
+              "rootDataSourceId": "dataSource_3"
             },
             "useDataSources": [
               {
-                "dataSourceId": "dataSource_2-0",
-                "mainDataSourceId": "dataSource_2-0",
-                "rootDataSourceId": "dataSource_2"
+                "dataSourceId": "dataSource_3-0",
+                "mainDataSourceId": "dataSource_3-0",
+                "rootDataSourceId": "dataSource_3"
               }
             ],
             "goToInitialMapExtentWhenSelectionCleared": false,
             "useAnyTriggerData": true
           },
           "version": "1.19.0",
-          "useDataSources": []
+          "useDataSources": [
+            {
+              "dataSourceId": "dataSource_3-0",
+              "mainDataSourceId": "dataSource_3-0",
+              "rootDataSourceId": "dataSource_3"
+            }
+          ]
         }
       ]
     },
@@ -3732,7 +3718,7 @@
       }
     }
   },
-  "publishTimestamp": 1774362698341,
+  "publishTimestamp": 1774470780237,
   "attributes": {
     "portalUrl": "https://gac2.maps.arcgis.com",
     "isWebTier": false,
@@ -3743,7 +3729,7 @@
     "type": "Web Experience",
     "thumbnail": null
   },
-  "timestamp": 1774362467002,
+  "timestamp": 1774470672017,
   "sharedThemeVariables": null,
   "mainLocale": "en",
   "dataSources": {
@@ -3752,7 +3738,70 @@
       "type": "WEB_MAP",
       "sourceLabel": "Dark Map ExB RM Generator",
       "itemId": "5bab79a137fc4d69b7d8e99a9b9d4561",
-      "portalUrl": "https://gac2.maps.arcgis.com"
+      "portalUrl": "https://gac2.maps.arcgis.com",
+      "childDataSourceJsons": {
+        "19d1f39d858-layer-6": {
+          "id": "dataSource_1-19d1f39d858-layer-6",
+          "type": "FEATURE_LAYER",
+          "sourceLabel": "Cities_Generator_User_View",
+          "portalUrl": "https://www.arcgis.com",
+          "itemId": "c81f11a5d4584431a507ab5a8149431b",
+          "layerId": "0",
+          "url": "https://services6.arcgis.com/XsbJqydgKRTKtXDY/arcgis/rest/services/Cities_Generator_User_View/FeatureServer/0",
+          "disableExport": true,
+          "query": {
+            "id": "dataSource_1-19d1f39d858-layer-6",
+            "label": "Cities_Generator_User_View",
+            "refreshInterval": 60
+          }
+        },
+        "1909e61060c-layer-8": {
+          "id": "dataSource_1-1909e61060c-layer-8",
+          "type": "FEATURE_LAYER",
+          "sourceLabel": "Cities_Generator",
+          "portalUrl": "https://www.arcgis.com",
+          "itemId": "897d2c23c3584730b027b8c73376ddd4",
+          "layerId": "0",
+          "url": "https://services6.arcgis.com/XsbJqydgKRTKtXDY/arcgis/rest/services/Cities/FeatureServer/0"
+        },
+        "18db181b054-layer-1": {
+          "id": "dataSource_1-18db181b054-layer-1",
+          "type": "GROUP_LAYER",
+          "sourceLabel": "Dark Map Base",
+          "portalUrl": "https://www.arcgis.com",
+          "itemId": "47ea98986dfe436796c301b532ba97b0",
+          "childDataSourceJsons": {
+            "18db181b218-layer-4": {
+              "id": "dataSource_1-18db181b054-layer-1-18db181b218-layer-4",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "World_Major_Lakes_Dark view",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "7a9d82c70a4d40fdacfd018898e13289",
+              "layerId": "3",
+              "url": "https://services6.arcgis.com/XsbJqydgKRTKtXDY/arcgis/rest/services/World_Major_Lakes_Dark_view/FeatureServer/3"
+            },
+            "18db181b212-layer-3": {
+              "id": "dataSource_1-18db181b054-layer-1-18db181b212-layer-3",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "World_Countries_Dark view",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "fb73e327ea9e4ad4adea84165c54ee22",
+              "layerId": "4",
+              "url": "https://services6.arcgis.com/XsbJqydgKRTKtXDY/arcgis/rest/services/World_Countries_Dark_view/FeatureServer/4"
+            },
+            "18db181b20c-layer-2": {
+              "id": "dataSource_1-18db181b054-layer-1-18db181b20c-layer-2",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "World_Ocean_Background_Dark view",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "ee2d3fb16e0e4a238bbcb9731a59053a",
+              "layerId": "5",
+              "url": "https://services6.arcgis.com/XsbJqydgKRTKtXDY/arcgis/rest/services/World_Ocean_Background_Dark_view/FeatureServer/5"
+            }
+          }
+        }
+      },
+      "isHidden": false
     },
     "widget_90_output_proximity_9819704500508732": {
       "id": "widget_90_output_proximity_9819704500508732",
@@ -3793,98 +3842,6 @@
             "esriType": "esriFieldTypeString",
             "alias": "4. WORLD REGION",
             "format": null
-          },
-          "x": {
-            "jimuName": "x",
-            "name": "x",
-            "type": "NUMBER",
-            "esriType": "esriFieldTypeDouble",
-            "alias": "x",
-            "format": {
-              "digitSeparator": true,
-              "places": 2
-            }
-          },
-          "y": {
-            "jimuName": "y",
-            "name": "y",
-            "type": "NUMBER",
-            "esriType": "esriFieldTypeDouble",
-            "alias": "y",
-            "format": {
-              "digitSeparator": true,
-              "places": 2
-            }
-          },
-          "ObjectId": {
-            "jimuName": "ObjectId",
-            "name": "ObjectId",
-            "type": "NUMBER",
-            "esriType": "esriFieldTypeInteger",
-            "alias": "ObjectId",
-            "format": {
-              "digitSeparator": true,
-              "places": 0
-            }
-          },
-          "Assigned_User": {
-            "jimuName": "Assigned_User",
-            "name": "Assigned_User",
-            "type": "STRING",
-            "esriType": "esriFieldTypeString",
-            "alias": "Assigned User",
-            "format": null
-          },
-          "ObjectId2": {
-            "jimuName": "ObjectId2",
-            "name": "ObjectId2",
-            "type": "NUMBER",
-            "esriType": "esriFieldTypeOID",
-            "alias": "ObjectId2",
-            "format": {
-              "digitSeparator": false,
-              "places": 0
-            }
-          },
-          "GlobalID": {
-            "jimuName": "GlobalID",
-            "name": "GlobalID",
-            "type": "STRING",
-            "esriType": "esriFieldTypeGlobalID",
-            "alias": "GlobalID",
-            "format": null
-          },
-          "CreationDate": {
-            "jimuName": "CreationDate",
-            "name": "CreationDate",
-            "type": "DATE",
-            "esriType": "esriFieldTypeDate",
-            "alias": "CreationDate",
-            "format": null
-          },
-          "Creator": {
-            "jimuName": "Creator",
-            "name": "Creator",
-            "type": "STRING",
-            "esriType": "esriFieldTypeString",
-            "alias": "Creator",
-            "format": null
-          },
-          "EditDate": {
-            "jimuName": "EditDate",
-            "name": "EditDate",
-            "type": "DATE",
-            "esriType": "esriFieldTypeDate",
-            "alias": "EditDate",
-            "format": null
-          },
-          "Editor": {
-            "jimuName": "Editor",
-            "name": "Editor",
-            "type": "STRING",
-            "esriType": "esriFieldTypeString",
-            "alias": "Editor",
-            "format": null
           }
         }
       },
@@ -3896,7 +3853,36 @@
       "sourceLabel": "Cities_Generator_User_View",
       "itemId": "c81f11a5d4584431a507ab5a8149431b",
       "portalUrl": "https://gac2.maps.arcgis.com",
-      "url": "https://services6.arcgis.com/XsbJqydgKRTKtXDY/arcgis/rest/services/Cities_Generator_User_View/FeatureServer"
+      "url": "https://services6.arcgis.com/XsbJqydgKRTKtXDY/arcgis/rest/services/Cities_Generator_User_View/FeatureServer",
+      "childDataSourceJsons": {
+        "0": {
+          "id": "dataSource_3-0",
+          "type": "FEATURE_LAYER",
+          "sourceLabel": "Cities_Generator2",
+          "url": "https://services6.arcgis.com/XsbJqydgKRTKtXDY/arcgis/rest/services/Cities_Generator_User_View/FeatureServer/0",
+          "layerId": "0",
+          "geometryType": "esriGeometryPoint",
+          "portalUrl": "https://gac2.maps.arcgis.com",
+          "itemId": "c81f11a5d4584431a507ab5a8149431b",
+          "disableExport": true,
+          "query": {
+            "id": "dataSource_3-0",
+            "label": "Cities_Generator2",
+            "refreshInterval": 60,
+            "orderBy": [
+              {
+                "jimuFieldName": "F2__Visible__",
+                "order": "DESC"
+              },
+              {
+                "jimuFieldName": "F1__CITY",
+                "order": "ASC"
+              }
+            ]
+          }
+        }
+      },
+      "isHidden": false
     }
   },
   "utilities": {
