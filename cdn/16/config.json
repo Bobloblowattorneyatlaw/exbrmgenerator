@@ -258,10 +258,10 @@
           "widgetId": "widget_73",
           "bbox": {
             "left": "7.7%",
-            "right": "60.3%",
+            "right": "57.6%",
             "top": "0.0%",
             "bottom": "94.6%",
-            "width": "32.0%",
+            "width": "34.7%",
             "height": "5.4%"
           },
           "setting": {
@@ -342,6 +342,12 @@
           "widgetId": "widget_91",
           "bbox": {},
           "setting": {}
+        },
+        "6": {
+          "type": "WIDGET",
+          "widgetId": "widget_93",
+          "bbox": {},
+          "setting": {}
         }
       },
       "type": "FIXED",
@@ -352,6 +358,7 @@
         "3",
         "4",
         "5",
+        "6",
         "1"
       ]
     },
@@ -937,6 +944,10 @@
             "widget_91": {
               "width": 302.6000061035156,
               "height": 634.6999969482422
+            },
+            "widget_93": {
+              "width": 297.25,
+              "height": 296.3666687011719
             }
           }
         },
@@ -3346,6 +3357,29 @@
       "useMapWidgetIds": [
         "widget_72"
       ]
+    },
+    "widget_93": {
+      "uri": "widgets/pan-to-latitude/",
+      "version": "1.0.0",
+      "config": {},
+      "id": "widget_93",
+      "useMapWidgetIds": [
+        "widget_72"
+      ],
+      "icon": {
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" d=\"m14 4-6 8-6-8z\"></path></svg>",
+        "properties": {
+          "filename": "Downwards filled triangle arrow",
+          "originalName": "filled/directional/down.svg",
+          "path": [
+            "generalAndArrows",
+            "caret"
+          ],
+          "inlineSvg": true,
+          "isUploaded": false,
+          "color": ""
+        }
+      }
     }
   },
   "exbVersion": "1.19.0",
@@ -3432,20 +3466,6 @@
           "sectionId": null,
           "messageWidgetId": "widget_76",
           "actionName": "zoomToFeature",
-          "description": null,
-          "config": {
-            "useDataSource": null,
-            "useDataSources": [],
-            "goToInitialMapExtentWhenSelectionCleared": false
-          },
-          "version": "1.19.0"
-        },
-        {
-          "actionId": "widget_72-panTo-1774176498480",
-          "widgetId": "widget_72",
-          "sectionId": null,
-          "messageWidgetId": "widget_76",
-          "actionName": "panTo",
           "description": null,
           "config": {
             "useDataSource": null,
@@ -3718,7 +3738,7 @@
       }
     }
   },
-  "publishTimestamp": 1774470780237,
+  "publishTimestamp": 1776788002220,
   "attributes": {
     "portalUrl": "https://gac2.maps.arcgis.com",
     "isWebTier": false,
@@ -3729,7 +3749,7 @@
     "type": "Web Experience",
     "thumbnail": null
   },
-  "timestamp": 1774470672017,
+  "timestamp": 1776788001341,
   "sharedThemeVariables": null,
   "mainLocale": "en",
   "dataSources": {
